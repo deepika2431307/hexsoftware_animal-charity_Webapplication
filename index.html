@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paws & Hearts - Animal Charity</title>
+  
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!--NAVIGATION BAR-->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="paw-icon">🐾</span> Paws &amp; Hearts
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#animals">Animals</a></li>
+      <li><a href="#donate">Donate</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!---Hamburger menu button--->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!---HERO SECTION--->
+  <section class="hero" id="home" style="padding-top:80px;">
+    <div class="hero-content">
+      <h1>Give Animals a <span class="highlight">Second Chance</span> 🐶🐱</h1>
+      <p>Every animal deserves love, care, and a forever home. We rescue, rehabilitate, and rehome animals in need across the country.</p>
+      <div class="hero-buttons">
+        <a href="#donate" class="btn btn-primary">Donate Now ❤️</a>
+        <a href="#programs" class="btn btn-secondary">Learn More</a>
+      </div>
+
+      <!---Counter stats--->
+      <div class="hero-stats">
+        <div class="stat-box">
+          <span class="stat-number" id="rescuedCount">0</span>
+          <span class="stat-label">Animals Rescued</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number" id="adoptedCount">0</span>
+          <span class="stat-label">Adopted</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number" id="volunteerCount">0</span>
+          <span class="stat-label">Volunteers</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="animal-emoji-circle">
+        <span class="big-emoji">🐕</span>
+        <div class="floating-emoji e1">🐱</div>
+        <div class="floating-emoji e2">🐇</div>
+        <div class="floating-emoji e3">🐦</div>
+        <div class="floating-emoji e4">🐠</div>
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT US SECTION-->
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About Us 🏠</h2>
+      <p>Who we are and what we do</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>Our Story</h3>
+        <p>Paws &amp; Hearts was started in 2020 by a group of animal lovers who wanted to make a difference. We saw too many animals on the streets without food, shelter, or love. So we decided to do something about it!</p>
+        <p>Today, we are a team of <strong>100+ volunteers</strong> and staff members who work every day to rescue animals, find them loving homes, and educate the public about animal welfare.</p>
+        <h3>Our Mission</h3>
+        <p>🎯 Our mission is simple — <em>no animal should suffer alone</em>. We believe every dog, cat, bird, and rabbit deserves a safe and caring home.</p>
+        <div class="mission-points">
+          <div class="point">✅ Rescue animals from dangerous situations</div>
+          <div class="point">✅ Provide medical care and rehabilitation</div>
+          <div class="point">✅ Find loving forever homes</div>
+          <div class="point">✅ Educate communities about animal care</div>
+        </div>
+      </div>
+      <div class="about-image-area">
+        <div class="about-card card1">
+          <span style="font-size:60px;">🐶</span>
+          <p>Over <strong>1000</strong> dogs rescued this year</p>
+        </div>
+        <div class="about-card card2">
+          <span style="font-size:60px;">🐱</span>
+          <p>Over <strong>500</strong> cats found new homes</p>
+        </div>
+        <div class="about-card card3">
+          <span style="font-size:60px;">🤝</span>
+          <p><strong>15 shelters</strong> supported across the country</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--OUR PROGRAM SECTION -->
+  <section class="programs" id="programs">
+    <div class="section-title">
+      <h2>Our Programs 📋</h2>
+      <p>Here's how we help animals every day</p>
+    </div>
+    <div class="programs-grid">
+      <div class="program-card" data-aos="fade-up">
+        <div class="program-icon">🚑</div>
+        <h3>Emergency Rescue</h3>
+        <p>Our rescue team operates 24/7 to save animals from accidents, abuse, and dangerous situations. We never leave an animal behind.</p>
+        <a href="#donate" class="card-link">Support This →</a>
+      </div>
+      <div class="program-card" data-aos="fade-up">
+        <div class="program-icon">🏥</div>
+        <h3>Medical Care</h3>
+        <p>We have partnered with veterinary clinics to provide free vaccinations, surgeries, and treatments for all rescued animals.</p>
+        <a href="#donate" class="card-link">Support This →</a>
+      </div>
+      <div class="program-card" data-aos="fade-up">
+        <div class="program-icon">🏠</div>
+        <h3>Shelter &amp; Fostering</h3>
+        <p>We run 15 shelters and have over 500 foster families who give animals a safe and warm home while they wait for adoption.</p>
+        <a href="#donate" class="card-link">Support This →</a>
+      </div>
+      <div class="program-card" data-aos="fade-up">
+        <div class="program-icon">❤️</div>
+        <h3>Adoption Program</h3>
+        <p>We connect animals with loving families. Our adoption process is simple, affordable, and we provide follow-up support.</p>
+        <a href="#donate" class="card-link">Support This →</a>
+      </div>
+      <div class="program-card" data-aos="fade-up">
+        <div class="program-icon">📚</div>
+        <h3>Education Drive</h3>
+        <p>We visit schools and colleges to teach students about animal welfare, responsible pet ownership, and kindness towards animals.</p>
+        <a href="#donate" class="card-link">Support This →</a>
+      </div>
+      <div class="program-card" data-aos="fade-up">
+        <div class="program-icon">🌿</div>
+        <h3>Wildlife Protection</h3>
+        <p>We work with forest departments to protect wild animals and stop illegal wildlife trade and habitat destruction.</p>
+        <a href="#donate" class="card-link">Support This →</a>
+      </div>
+    </div>
+  </section>
+
+  <!--MEET OUR ANIMALS SECTION-->
+  <section class="animals" id="animals">
+    <div class="section-title">
+      <h2>Meet Our Animals 🐾</h2>
+      <p>These cute friends are waiting for a home!</p>
+    </div>
+    <div class="animals-grid">
+
+      <div class="animal-card">
+        <div class="animal-img dog-img">🐕</div>
+        <div class="animal-info">
+          <span class="badge">Dog</span>
+          <h4>Bruno</h4>
+          <p>Age: 2 years | Male</p>
+          <p class="animal-desc">Bruno is a playful and energetic dog who loves to run and play fetch. He is very friendly with kids!</p>
+          <a href="#contact" class="btn btn-adopt">Adopt Me 🐾</a>
+        </div>
+      </div>
+
+      <div class="animal-card">
+        <div class="animal-img cat-img">🐈</div>
+        <div class="animal-info">
+          <span class="badge badge-cat">Cat</span>
+          <h4>Fizzy</h4>
+          <p>Age: 1 year | Female</p>
+          <p class="animal-desc">Mittens is a calm and cuddly cat. She loves sitting on laps and purring. Perfect for a quiet home.</p>
+          <a href="#contact" class="btn btn-adopt">Adopt Me 🐾</a>
+        </div>
+      </div>
+
+      <div class="animal-card">
+        <div class="animal-img rabbit-img">🐇</div>
+        <div class="animal-info">
+          <span class="badge badge-rabbit">Rabbit</span>
+          <h4>Coco</h4>
+          <p>Age: 6 months | Female</p>
+          <p class="animal-desc">Coco is a tiny and adorable rabbit who loves to hop around and eat carrots. Great for first-time pet owners!</p>
+          <a href="#contact" class="btn btn-adopt">Adopt Me 🐾</a>
+        </div>
+      </div>
+
+      <div class="animal-card">
+        <div class="animal-img bird-img">🦜</div>
+        <div class="animal-info">
+          <span class="badge badge-bird">Bird</span>
+          <h4>Fifi</h4>
+          <p>Age: 1 years | Male</p>
+          <p class="animal-desc">Rio is a colorful and talkative parrot. He can say a few words and loves to sing. A real entertainer!</p>
+          <a href="#contact" class="btn btn-adopt">Adopt Me 🐾</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--DONATATION SECTION--> 
+  <section class="donate" id="donate">
+    <div class="section-title light">
+      <h2>Support Our Cause 💛</h2>
+      <p>Your donation helps us save more lives</p>
+    </div>
+
+    <!--How your money help us-->
+
+    <div class="donation-impact">
+      <div class="impact-card">
+        <span class="impact-emoji">🍖</span>
+        <strong>₹200</strong>
+        <p>Feeds one animal for a week</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-emoji">💉</span>
+        <strong>₹300</strong>
+        <p>Pays for one vaccination</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-emoji">🏨</span>
+        <strong>₹800</strong>
+        <p>One month of shelter care</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-emoji">🏥</span>
+        <strong>₹3000</strong>
+        <p>Covers a full surgery</p>
+      </div>
+    </div>
+
+    <!--Donation Form -->
+    <div class="donation-form-box">
+      <h3>Make a Donation 💝</h3>
+      <p>Choose an amount or enter your own!</p>
+
+      <!--Donation Amount buttons -->
+      <div class="amount-buttons" id="amountButtons">
+        <button class="amount-btn" data-amount="200">₹200</button>
+        <button class="amount-btn" data-amount="300">₹300</button>
+        <button class="amount-btn active" data-amount="800">₹800</button>
+        <button class="amount-btn" data-amount="3000">₹3000</button>
+      </div>
+
+      <!--Custom amount -->
+      <div class="form-group">
+        <label for="customAmount">Or enter custom amount (₹):</label>
+        <input type="number" id="customAmount" placeholder="e.g. 2500" min="1"/>
+      </div>
+
+      <!-- Name and email -->
+      <div class="form-group">
+        <label for="donorName">Your Name:</label>
+        <input type="text" id="donorName" placeholder="Enter your name"/>
+      </div>
+      <div class="form-group">
+        <label for="donorEmail">Your Email:</label>
+        <input type="email" id="donorEmail" placeholder="Enter your email"/>
+      </div>
+
+      <!-- Payment method -->
+      <div class="form-group">
+        <label>Payment Method:</label>
+        <div class="payment-options">
+          <label class="radio-label"><input type="radio" name="payment" value="upi" checked/> UPI</label>
+          <label class="radio-label"><input type="radio" name="payment" value="card"/> Card</label>
+          <label class="radio-label"><input type="radio" name="payment" value="netbanking"/> Net Banking</label>
+        </div>
+      </div>
+
+      <button class="btn btn-donate" id="donateBtn" onclick="handleDonation()">
+        Donate Now ❤️
+      </button>
+
+      <!-- Success message (hidden by default) -->
+      <div class="success-msg" id="successMsg">
+        🎉 <strong>Thank you so much!</strong> Your donation will help save animal lives. We will send you a receipt on your email.
+      </div>
+    </div>
+  </section>
+
+  <!--VOLUNTEERS SECTION-->
+  <section class="volunteers">
+    <div class="section-title">
+      <h2>Join Our Team 🙋</h2>
+      <p>Become a volunteer and make a difference</p>
+    </div>
+    <div class="volunteer-cards">
+      <div class="vol-card">
+        <span class="vol-icon">🏠</span>
+        <h4>Foster Parent</h4>
+        <p>Provide a temporary home for animals while they wait for adoption. All food and medical costs are covered by us.</p>
+      </div>
+      <div class="vol-card">
+        <span class="vol-icon">🚗</span>
+        <h4>Transport Volunteer</h4>
+        <p>Help us transport animals to vet appointments, shelters, and adoption events in your city.</p>
+      </div>
+      <div class="vol-card">
+        <span class="vol-icon">📸</span>
+        <h4>Social Media Helper</h4>
+        <p>Use your phone to take photos of animals and post on social media to help them get adopted faster!</p>
+      </div>
+      <div class="vol-card">
+        <span class="vol-icon">🎓</span>
+        <h4>Awareness Educator</h4>
+        <p>Visit schools and communities to spread awareness about animal rights and responsible pet ownership.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: 2rem;">
+      <a href="#contact" class="btn btn-primary">Become a Volunteer 🐾</a>
+    </div>
+  </section>
+
+   <!--CONTACT US SECTION-->
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Contact Us 📞</h2>
+      <p>We'd love to hear from you!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <p>123,Animal welfare NGO,Mandhana,Kanpur,Uttar Pradesh - 208016</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <p>+91 8834485894</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <p>pawsandhearts@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🕐</span>
+          <p>Monday to Saturday: 9AM – 6PM</p>
+        </div>
+      </div>
+
+    <!-- Contact form -->
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="contactName">Your Name:</label>
+          <input type="text" id="contactName" placeholder="What's your name?"/>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Your Email:</label>
+          <input type="email" id="contactEmail" placeholder="your@email.com"/>
+        </div>
+        <div class="form-group">
+          <label for="contactSubject">Subject:</label>
+          <select id="contactSubject">
+            <option value="">-- Select a topic --</option>
+            <option value="adopt">I want to adopt an animal</option>
+            <option value="volunteer">I want to volunteer</option>
+            <option value="donate">Donation query</option>
+            <option value="report">Report an animal in danger</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contactMsg">Your Message:</label>
+          <textarea id="contactMsg" rows="4" placeholder="Type your message here..."></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="handleContact()">Send Message 📨</button>
+        <div class="success-msg" id="contactSuccess">
+          ✅ Message sent! We will get back to you within 24 hours.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="paw-icon">🐾</span>
+        <strong>Paws &amp; Hearts</strong>
+        <p>Because every animal deserves love.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#donate">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Programs</h4>
+        <ul>
+          <li><a href="#programs">Emergency Rescue</a></li>
+          <li><a href="#programs">Medical Care</a></li>
+          <li><a href="#programs">Adoption</a></li>
+          <li><a href="#programs">Education</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Paws &amp; Hearts Animal Charity | Made with ❤️ by Deepika | BCA 3rd Year | PSIT college </p>
+    </div>
+  </footer>
+
+   <!--Scroll to top button--> 
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" title="Go to top">⬆️</button>
+
+   <!-- Our JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
